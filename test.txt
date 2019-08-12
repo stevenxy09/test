@@ -1,0 +1,94 @@
+
+v4uUjq_5qM9
+1426109131mysql
+mvn clean install -DskipTests
+mvn clean install -Dmaven.test.skip=true
+Linux下找程序安装路径:
+如果命令 which 和whereis 都找不到安装目录，可使用以下办法
+ps -ef|grep redis
+得到了进程号 xxxx
+然后 ls -l /proc/xxxx/cwd
+
+linux中nginx启动和关闭:
+sbin/nginx -c /etc/nginx/nginx.conf 
+
+可以看到系统中ssh安装包
+rpm -qa | grep ssh 
+
+启动停止redis
+./redis-server redis.conf
+./redis-cli shutdown
+redis-cli -h xxx.xxx.xxx.xxx  -p xxxx -u xxxx -a xxxx  shutdown
+
+redis调节
+Jedis jedis=new Jedis("47.97.222.41",6379);
+        jedis.auth("1426109131xy");
+        System.out.println(jedis.ping());
+        jedis.close();
+		
+rpm -qa | grep mysql
+
+启动springboot项目
+nohup java -jar xxx.jar &
+
+content_id
+contentId
+
+stevenxy's blog
+太平梳打奶盐味
+https://www.xiaohongshu.com/discovery/item/59a38c6c7ee0a977cf9f6fe4?_ad0.9100740517631493
+
+
+ <td colspan="2" v-if="showOffice">合计(不包含分公司)</td>
+ 
+ 
+ align="center"
+ the remote system refused the connection
+ sudo apt-get install openssh-server
+ 
+statistics/work/page/export
+/statistics/work/daily/page/export
+/statistics/work/day/night/page/export
+
+handleType
+
+handleState
+
+handleUserName
+
+1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2
+private static String getCar() {
+        List<Integer> stateList = CarStateEnum.getValidState(60);
+        List<String> strStateList = new ArrayList<>();
+        for (int i = 0; i < stateList.size() - 1; i++) {
+            if (i <= 3) {
+                if (stateList.get(i) == -1) {
+                    strStateList.add(CarStateEnum.ERROR.getEnum(i).getText() + ":" + "关闭");
+                } else {
+                    strStateList.add(CarStateEnum.ERROR.getEnum(i).getText() + ":" + "打开");
+                }
+            }
+            if (i == 4) {
+                if (stateList.get(4) == -1) {
+                    strStateList.add(CarStateEnum.ERROR.getEnum(4).getText() + ":" + "未制动");
+                } else {
+                    strStateList.add(CarStateEnum.ERROR.getEnum(4).getText() + ":" + "制动");
+                }
+            }
+            if (i == 5) {
+                if (stateList.get(5) == -1) {
+                    strStateList.add(CarStateEnum.ERROR.getEnum(5).getText() + ":" + "未插卡");
+                } else {
+                    strStateList.add(CarStateEnum.ERROR.getEnum(5).getText() + ":" + "已插卡");
+                }
+            }
+            if (i == 6) {
+                if (stateList.get(6) == -1) {
+                    strStateList.add(CarStateEnum.ERROR.getEnum(10).getText() + ":" + "未定位");
+                } else {
+                    strStateList.add(CarStateEnum.ERROR.getEnum(10).getText() + ":" + "已定位");
+                }
+            }
+        }
+        return strStateList.toString();
+    }

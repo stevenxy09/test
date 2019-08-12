@@ -1,0 +1,54 @@
+从冷漠到关心,从谢绝到依赖，从生疏到相爱,
+/**
+     * 返回昨天
+     * @param today
+     * @return
+     */
+    public Date yesterday(Date today) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(today);
+        calendar.set(Calendar.DATE, calendar.get(Calendar.DATE) - 1);
+        return calendar.getTime();
+    }
+
+    /**
+     * 返回明天
+     * @param today
+     * @return
+     */
+    public Date tomorrow(Date today) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(today);
+        calendar.set(Calendar.DATE, calendar.get(Calendar.DATE) + 1);
+        return calendar.getTime();
+    }
+	//190101120101
+beginTime = new SimpleDateFormat("yyMMddhhmmss", Locale.CHINESE).format(Dates.parse(form.getDateRange().split(",")[0]));
+
+去重
+String plateNos
+String[] plateNoArr = plateNos.split(",");
+List<String> plateList = Arrays.asList(plateNoArr);
+Set<String> plateSet = new HashSet(plateList);
+plateNos = StringUtils.join(plateSet.toArray(), ",");
+
+
+版本~4.0.4.RELEASE
+2.1.10 预报名获取培训车型信息接口​
+107b94fe5f144068
+http://stevenxy.free.idcfengye.com
+{
+    "userName": "612729199504101831",
+    "passWord": "101831"
+}主动安全
+evidence
+/evidence/forward/warning
+el-icon-fa-align-justify
+
+/admin/dvs/active/alarm/evidence/forward
+驾驶异常证据中心 el-icon-fa-car
+/admin/dvs/active/alarm/evidence/drive
+胎压预警证据中心
+/admin/dvs/active/alarm/evidence/pressure
+盲区预警证据中心
+/admin/dvs/active/alarm/evidence/blind

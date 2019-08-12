@@ -1,0 +1,62 @@
+server.port=80
+server.tomcat.basedir=F:\\cache
+#server.tomcat.basedir=/data/cache
+jasypt.encryptor.password=stevenxy
+#Specify the name of the project accessed
+#server.servlet.context-path=/stevenxy
+#Turn thymeleaf cache off
+spring.thymeleaf.cache=false
+#Remove the html checksum
+spring.thymeleaf.mode=HTML
+#database
+spring.datasource.url=jdbc:mysql://localhost:3306/story?autoReconnect=true&useUnicode=true&useSSL=false&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+spring.datasource.username=ENC(C/XFmSrLes6NgktzkwAdKw==)
+spring.datasource.password=ENC(9U/72GRiw31aKQe+dWXy1A==)
+#spring.datasource.url=jdbc:mysql://47.97.222.41:3306/blog?autoReconnect=true&useUnicode=true&useSSL=false&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+#spring.datasource.username=root
+#spring.datasource.password=1426109131Mysql!
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
+###################The following is the configuration added by druid###########################
+# The following is a supplementary setting for the connection pool, applied to all the above data sources to initialize the size, minimum, maximum
+spring.datasource.initialSize=5
+spring.datasource.minIdle=5
+spring.datasource.maxActive=20
+# Configure the time to get the connection waiting timeout
+spring.datasource.maxWait=60000
+# How long does the configuration interval take to detect an idle connection that needs to be closed, in milliseconds
+spring.datasource.timeBetweenEvictionRunsMillis=60000
+# Configure the minimum lifetime of a connection in the pool, in milliseconds
+spring.datasource.minEvictableIdleTimeMillis=300000
+spring.datasource.validationQuery=SELECT 1 FROM DUAL
+spring.datasource.testWhileIdle=true
+spring.datasource.testOnBorrow=false
+spring.datasource.testOnReturn=false
+# Open PSCache and specify the size of the PSCache on each connection
+spring.datasource.poolPreparedStatements=true
+spring.datasource.maxPoolPreparedStatementPerConnectionSize=20
+# Configure the filter for monitoring statistics interception. After removing the monitoring interface, SQL cannot be counted. The 'wall' is used for the firewall. If the log4j project is added, the project cannot be started. TODO
+spring.datasource.filters=stat,wall
+# Open the mergeSql function via the connectProperties property; slow SQL logging
+spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+# Combine monitoring data from multiple DruidDataSources
+#spring.datasource.useGlobalDataSourceStat=true
+###############The above configuration for adding the druid########################################
+#redis
+spring.redis.host=ENC(OoGJPAyFjyN29VMbOhTyZvf9a9jIJ2Fm)
+spring.redis.port=6379
+spring.redis.password=ENC(foCQG9E2RPFArkqjoRcBWVS1c0wLOoG0)
+spring.redis.jedis.pool.max-active=200
+spring.redis.jedis.pool.max-wait=-1
+spring.redis.jedis.pool.max-idle=8
+spring.redis.jedis.pool.min-idle=0
+spring.redis.timeout=5000
+mybatis.mapper-locations=classpath:mapper/*.xml
+mybatis.type-aliases-package=com.stevenxy.blog.dao
+#Logging
+#logging.config=classpath:logback-spring-dev.xml
+#logging.config=classpath:logback-spring-prod.xml
+spring.mail.host=smtp.163.com
+spring.mail.username=random_xy@163.com
+spring.mail.password=ENC(foCQG9E2RPFArkqjoRcBWVS1c0wLOoG0)
+spring.mail.port=25

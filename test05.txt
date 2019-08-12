@@ -1,0 +1,14 @@
+1581x1054
+两个下发功能，增加关闭按钮.
+​新增修改新增的table点击关闭后回到点击此table的页面
+新增车辆，不关键的信息为非必填
+scheduled
+rectangle
+
+DWORD  long writeInt
+WORD Integer writeShort
+
+
+el-icon-fa-plus
+
+微信 QQ 微博 支付宝

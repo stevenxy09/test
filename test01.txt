@@ -1,0 +1,14 @@
+指定配置文件启动https://zhidao.baidu.com/question/496418507190012004.html
+https://baijiahao.baidu.com/s?id=1618637158792091725&wfr=spider&for=pc
+向于
+社会保障号码:500101199411279319
+卡号:B00455400
+银行卡:6217 0037 6004 2335 158
+622823 0475136848063
+
+git init //初始化仓库
+git add xxx //添加文件到本地仓库
+git commit -m “first commit”  //添加文件描述信息
+git remote add origin + 远程仓库地址 //链接远程仓库，创建主分支
+git pull origin master // 把本地仓库的变化连接到远程仓库主分支
+git push -u origin master //把本地仓库的文件推送到远程仓库

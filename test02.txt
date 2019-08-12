@@ -1,0 +1,21 @@
+1、评论单引号显示BUG
+2、删除标签涉及到文章标签BUG
+3、仪表附件数为假
+4、评论BUG
+*5、文章图片上传BUG 解决
+6、页面管理 about预览路径bug
+7、评论管理 点击内容去评论地方bug
+8、默认分类页面翻页错误
+9、页面管理新增需要标签bug
+
+表格没有边框
+缩写没有需要
+选项没有
+
+server.tomcat.basedir=F:\\cache
+spring.datasource.url=jdbc:mysql://localhost:3306/story?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=true
+spring.datasource.username=ENC(24UUls8TJ5bz8K5DedFcEA==)
+spring.datasource.password=ENC(gEV+wZ0RhcnsEc/+u8c+5Q==)
+
+
+
